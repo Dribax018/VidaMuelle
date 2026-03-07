@@ -100,6 +100,15 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""72a389d1-01bc-449c-a502-402123ee2f29"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -135,6 +144,17 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""action"": ""Movimiento"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f92d8625-d989-4b68-8d81-853d05ed029b"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -144,6 +164,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         // Keyboard
         m_Keyboard = asset.FindActionMap("Keyboard", throwIfNotFound: true);
         m_Keyboard_Movimiento = m_Keyboard.FindAction("Movimiento", throwIfNotFound: true);
+        m_Keyboard_Jump = m_Keyboard.FindAction("Jump", throwIfNotFound: true);
     }
 
     ~@PlayerActions()
@@ -225,6 +246,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Keyboard;
     private List<IKeyboardActions> m_KeyboardActionsCallbackInterfaces = new List<IKeyboardActions>();
     private readonly InputAction m_Keyboard_Movimiento;
+    private readonly InputAction m_Keyboard_Jump;
     /// <summary>
     /// Provides access to input actions defined in input action map "Keyboard".
     /// </summary>
@@ -240,6 +262,10 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Keyboard/Movimiento".
         /// </summary>
         public InputAction @Movimiento => m_Wrapper.m_Keyboard_Movimiento;
+        /// <summary>
+        /// Provides access to the underlying input action "Keyboard/Jump".
+        /// </summary>
+        public InputAction @Jump => m_Wrapper.m_Keyboard_Jump;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -269,6 +295,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Movimiento.started += instance.OnMovimiento;
             @Movimiento.performed += instance.OnMovimiento;
             @Movimiento.canceled += instance.OnMovimiento;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         /// <summary>
@@ -283,6 +312,9 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Movimiento.started -= instance.OnMovimiento;
             @Movimiento.performed -= instance.OnMovimiento;
             @Movimiento.canceled -= instance.OnMovimiento;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         /// <summary>
@@ -330,5 +362,12 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMovimiento(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Jump" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnJump(InputAction.CallbackContext context);
     }
 }

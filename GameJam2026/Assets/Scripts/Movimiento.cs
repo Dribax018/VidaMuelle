@@ -27,6 +27,10 @@ public class Movimiento : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         health = maxHealth;
     }
+    internal Rigidbody2D GetRigidBody()
+    {
+        return rb;
+    }
     public void OnMove(InputAction.CallbackContext contextMovement)
     {
         if (contextMovement.performed)
@@ -105,6 +109,11 @@ public class Movimiento : MonoBehaviour
             Debug.Log("Detecte agua");
             RecoverHealth();
             recover.Deactivate();
+        }
+        else if (collision.TryGetComponent<TriggerForPelican>(out TriggerForPelican pelican))
+        {
+            pelican.enabled = true;
+            pelican.PelicanSet(this);
         }
 
     }

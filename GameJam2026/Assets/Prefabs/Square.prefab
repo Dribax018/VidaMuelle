@@ -152,6 +152,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 1750eee3-c886-4a5c-a56c-8253fda03ff4
     m_ActionName: 'Keyboard/PelicanControl[/Keyboard/w,/Keyboard/s]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 15762c50-896c-4146-99c8-677a57f66cc9
+    m_ActionName: 'Keyboard/LianaControl[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Keyboard
@@ -172,6 +176,9 @@ MonoBehaviour:
   speed: 2
   jumpForce: 10
   maxHealth: 100
+  layerRay:
+    serializedVersion: 2
+    m_Bits: 8
   healthbar: {fileID: 0}
 --- !u!61 &8582485033593635187
 BoxCollider2D:

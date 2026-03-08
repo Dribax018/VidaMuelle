@@ -13,6 +13,7 @@ public class Water : MonoBehaviour
     {
         
     }
+    //Se desactiva el objeto
     internal void Deactivate()
     {
         gameObject.SetActive(false);

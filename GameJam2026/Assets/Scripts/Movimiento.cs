@@ -60,6 +60,26 @@ public class Movimiento : MonoBehaviour
             isMoving = false;
         }
     }
+    ///77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+    //cuando el pez toca el acido por ahora se queda sobre el
+    public void muerteinstantanea()
+    {
+        Vector3 posDeAci = transform.position;
+        posDeAci.y = Mathf.Clamp(posDeAci.y, -2.5f, 6f);
+        transform.position = posDeAci;
+        if (isMoving)
+        {
+            //Se movera dependiendo del input dado
+            posDeAci += movement * Time.deltaTime;
+            posDeAci += Vector3.right * Time.deltaTime;
+        }
+        else
+        {
+            posDeAci += Vector3.right * Time.deltaTime;
+        }
+    }
+    ////77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+
     //Sirve para llamar al Player Input en el jugador y acceder al salto del jugador
     public void OnJump(InputAction.CallbackContext contextJump)
     {

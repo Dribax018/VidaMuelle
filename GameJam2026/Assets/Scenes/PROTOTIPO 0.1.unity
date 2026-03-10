@@ -31161,6 +31161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1057891575662908680, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_GravityScale
+      value: 3.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1828010408260325612, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_Name
       value: PEZ
@@ -31179,11 +31183,11 @@ PrefabInstance:
       objectReference: {fileID: 757333982}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.93
+      value: 38.57
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.92
+      value: 1.91
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.z

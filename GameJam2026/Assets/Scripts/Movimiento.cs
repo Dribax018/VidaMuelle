@@ -87,8 +87,12 @@ public class Movimiento : MonoBehaviour
         //Se comprueba si se puede mover 
         if (isMoving)
         {
+            Vector3 nuevaPos = transform.position + movement * speed * Time.deltaTime;
+            nuevaPos.y = Mathf.Clamp(nuevaPos.y, -2f, 5f);
+            transform.position = nuevaPos;
+            Debug.LogError("posicion" + transform.position + " nombre " + transform.gameObject.name);
             //Se mueve a una velocidad cada frame
-            transform.position += movement * speed * Time.deltaTime;
+            //transform.position += movement * speed * Time.deltaTime;
         }
         //Se comprueba si se puede saltar
         if (isJumping)

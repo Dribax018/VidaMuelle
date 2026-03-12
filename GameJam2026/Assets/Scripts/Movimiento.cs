@@ -160,10 +160,10 @@ public class Movimiento : MonoBehaviour
             health = 0;
             Debug.Log(" aqui muere el jugador"); //AQUI SE ENLAZARÍA A LA ANIMACIÓN Y PENDIENTE DE ESPECIFICAR LA MUERTE DEL JUGADOR CON CADA TRIGGER
         }
-        if (collision.gameObject.tag == "Reducirvida")
+        if (collision.gameObject.tag == "Victoria")
         {
             health =health - 10;
-            Debug.Log("los pajaros dañan al jugador"); //Aquí recibe 10 de daño por cada pajaro que le golpea
+            Debug.Log("Has ganado"); //Aquí el jugador toca el trigger que le da la victoria
         }
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Movimiento : MonoBehaviour
 {
+    public Animator animation;
     //Guarda la direccion en la que se puede mover
     Vector3 movement;
     //Velocidad del jugador

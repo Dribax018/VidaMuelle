@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 67023785}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 408233415}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6899,7 +6899,7 @@ GameObject:
   - component: {fileID: 549731009}
   m_Layer: 0
   m_Name: "ANIMACI\xD3N FLOTADOR"
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10254,7 +10254,7 @@ GameObject:
   - component: {fileID: 803507446}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10540,7 +10540,7 @@ GameObject:
   - component: {fileID: 832665958}
   m_Layer: 0
   m_Name: Flotador 1_0 (2)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14799,7 +14799,7 @@ GameObject:
   - component: {fileID: 1151617125}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

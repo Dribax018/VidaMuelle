@@ -120,9 +120,9 @@ public class Movimiento : MonoBehaviour
             health = maxHealth;
             healthbar.fillAmount = health / maxHealth;
         }
-        float velocidadX = Input.GetAxis("Horizontal")*Time.deltaTime*speed; //Para detectar el movimiento horizontal y cambiar de animación 
-        animator.SetFloat("MOVERSE",velocidadX*speed);
-        Vector3 posicion = transform.position;
+        float velocidadX = Input.GetAxis("Horizontal")*Time.deltaTime*speed; //UNAI: Para detectar el movimiento horizontal y cambiar de animación 
+        animator.SetFloat("MOVERSE",velocidadX*speed);//
+        Vector3 posicion = transform.position;//
         transform.position = new Vector3 (velocidadX + posicion.x, posicion.y, posicion.z);
 
     }

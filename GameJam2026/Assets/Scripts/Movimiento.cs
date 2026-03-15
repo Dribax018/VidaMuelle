@@ -121,7 +121,7 @@ public class Movimiento : MonoBehaviour
             healthbar.fillAmount = health / maxHealth;
         }
         float velocidadX = Input.GetAxis("Horizontal")*Time.deltaTime*speed;
-        animator.SetFloat("MOVERSE",velocidadX);
+        animator.SetFloat("MOVERSE",velocidadX*speed);
         Vector3 posicion = transform.position;
         transform.position = new Vector3 (velocidadX + posicion.x, posicion.y, posicion.z);
 

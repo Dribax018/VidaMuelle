@@ -5141,7 +5141,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156815560}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5159,7 +5159,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &167992815
 GameObject:
   m_ObjectHideFlags: 0
@@ -10108,9 +10108,10 @@ GameObject:
   - component: {fileID: 495916515}
   - component: {fileID: 495916518}
   - component: {fileID: 495916517}
+  - component: {fileID: 495916519}
   m_Layer: 3
   m_Name: "BOYAS/FLOTADORES/BUZOS/BA\xD1ISTAS"
-  m_TagString: Untagged
+  m_TagString: destruible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10272,7 +10273,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495916514}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10290,7 +10291,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!114 &495916519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495916514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &499514167
 GameObject:
   m_ObjectHideFlags: 0
@@ -18946,9 +18961,10 @@ GameObject:
   - component: {fileID: 1076993874}
   - component: {fileID: 1076993877}
   - component: {fileID: 1076993876}
+  - component: {fileID: 1076993878}
   m_Layer: 3
   m_Name: "BOYA/FLOTADOR/BUZO/BA\xD1ISTA"
-  m_TagString: Untagged
+  m_TagString: destruible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19077,7 +19093,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076993873}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19095,7 +19111,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!114 &1076993878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076993873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1083578222
 GameObject:
   m_ObjectHideFlags: 0
@@ -19921,9 +19951,10 @@ GameObject:
   - component: {fileID: 1108067705}
   - component: {fileID: 1108067708}
   - component: {fileID: 1108067707}
+  - component: {fileID: 1108067709}
   m_Layer: 3
   m_Name: "BOYA/FLOTADOR/BUZO/BA\xD1ISTA"
-  m_TagString: Untagged
+  m_TagString: destruible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20052,7 +20083,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108067704}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -20070,7 +20101,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!114 &1108067709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108067704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1116885002
 GameObject:
   m_ObjectHideFlags: 0
@@ -27599,9 +27644,10 @@ GameObject:
   - component: {fileID: 1457424563}
   - component: {fileID: 1457424566}
   - component: {fileID: 1457424565}
+  - component: {fileID: 1457424567}
   m_Layer: 3
   m_Name: "BOYA/FLOTADOR/BUZO/BA\xD1ISTA"
-  m_TagString: Untagged
+  m_TagString: destruible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27730,7 +27776,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457424562}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -27748,7 +27794,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
+--- !u!114 &1457424567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457424562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1458200557
 GameObject:
   m_ObjectHideFlags: 0
@@ -36529,9 +36589,10 @@ GameObject:
   - component: {fileID: 1875859486}
   - component: {fileID: 1875859485}
   - component: {fileID: 1875859484}
+  - component: {fileID: 1875859487}
   m_Layer: 3
   m_Name: "BOYA/FLOTADOR/BUZO/BA\xD1ISTA "
-  m_TagString: Untagged
+  m_TagString: destruible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36605,7 +36666,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875859482}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -36623,7 +36684,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!212 &1875859486
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36679,6 +36740,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1875859487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875859482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1910061726
 GameObject:
   m_ObjectHideFlags: 0
@@ -40604,6 +40679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PEZ
       objectReference: {fileID: 0}
+    - target: {fileID: 1828010408260325612, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2144433867698419806, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -40662,11 +40741,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 37.1
+      value: 10.88
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.z

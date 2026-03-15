@@ -94,11 +94,7 @@ public class Movimiento : MonoBehaviour
         //Se comprueba si se puede saltar
         if (isJumping)
         {
-            ////if (Time.time - jumpHolding < maxJumpHolding)
-            //{
-            //    isJumping = false;
-            //    rb.linearVelocity = Vector2.zero;
-            //}
+
             //Se guarda lo que ha colisionado con el raycast
             RaycastHit2D p = Physics2D.Raycast(this.transform.position, Vector2.down, 0.6f, layerRay);
             //Si la distancia entre el punto de impacto y el objeto
@@ -123,7 +119,7 @@ public class Movimiento : MonoBehaviour
         float velocidadX = Input.GetAxis("Horizontal")*Time.deltaTime*speed; //UNAI: Para detectar el movimiento horizontal y cambiar de animación 
         animator.SetFloat("MOVERSE",velocidadX*speed);//
         Vector3 posicion = transform.position;//
-        transform.position = new Vector3 (velocidadX + posicion.x, posicion.y, posicion.z);
+        transform.position = new Vector3 (velocidadX + posicion.x, posicion.y);
 
     }
     //Permite recuperar la salud del jugador

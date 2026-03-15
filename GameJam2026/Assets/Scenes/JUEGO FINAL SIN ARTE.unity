@@ -511,9 +511,10 @@ GameObject:
   m_Component:
   - component: {fileID: 49922221}
   - component: {fileID: 49922222}
+  - component: {fileID: 49922223}
   m_Layer: 0
   m_Name: Flotador 1_0 (2)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,6 +589,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &49922223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49922220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &54406448
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,9 +775,10 @@ GameObject:
   m_Component:
   - component: {fileID: 67023784}
   - component: {fileID: 67023785}
+  - component: {fileID: 67023786}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -837,6 +853,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &67023786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67023783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &73034137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,7 +1627,7 @@ GameObject:
   - component: {fileID: 146009428}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (10)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1782,7 +1812,7 @@ GameObject:
   - component: {fileID: 154960202}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (5)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3242,7 +3272,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1242748193}
-  - {fileID: 1069105171}
   - {fileID: 331271184}
   - {fileID: 2146502974}
   - {fileID: 25068554}
@@ -4774,9 +4803,10 @@ GameObject:
   m_Component:
   - component: {fileID: 408233414}
   - component: {fileID: 408233415}
+  - component: {fileID: 408233416}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4851,6 +4881,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &408233416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408233413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &411142544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1828010408260325612, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
@@ -6179,7 +6223,7 @@ GameObject:
   - component: {fileID: 514519779}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (2)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6671,7 +6715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1828010408260325612, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2144433867698419806, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SortingOrder
@@ -6704,6 +6748,14 @@ PrefabInstance:
     - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_Offset.y
       value: -0.0018066391
+      objectReference: {fileID: 0}
+    - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -6754,6 +6806,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1991174031231122854, guid: d8aa4dfccc03d734eb11cbc5ec6acff1, type: 3}
@@ -6772,6 +6832,10 @@ PrefabInstance:
     - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -6819,11 +6883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.834
+      value: 38.8
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.005
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7145921162379854077, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6984,9 +7048,10 @@ GameObject:
   - component: {fileID: 549731008}
   - component: {fileID: 549731010}
   - component: {fileID: 549731009}
+  - component: {fileID: 549731011}
   m_Layer: 0
   m_Name: "ANIMACI\xD3N FLOTADOR"
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7083,6 +7148,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &549731011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549731007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &568073158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8297,9 +8376,10 @@ GameObject:
   m_Component:
   - component: {fileID: 639207029}
   - component: {fileID: 639207030}
+  - component: {fileID: 639207031}
   m_Layer: 0
   m_Name: Flotador 1_0 (3)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8374,6 +8454,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &639207031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639207028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &649231249
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,9 +9027,10 @@ GameObject:
   m_Component:
   - component: {fileID: 673844217}
   - component: {fileID: 673844218}
+  - component: {fileID: 673844219}
   m_Layer: 0
   m_Name: Flotador 1_0 (4)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9010,6 +9105,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &673844219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673844216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1001 &679156552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9021,6 +9130,14 @@ PrefabInstance:
     - target: {fileID: 2179655110798442513, guid: de050fdce06658544a65beb864c9ec97, type: 3}
       propertyPath: m_Name
       value: PelicanGroup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179655110798442513, guid: de050fdce06658544a65beb864c9ec97, type: 3}
+      propertyPath: m_TagString
+      value: pelican
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302109075996439853, guid: de050fdce06658544a65beb864c9ec97, type: 3}
+      propertyPath: m_TagString
+      value: pelican
       objectReference: {fileID: 0}
     - target: {fileID: 5017593327869920521, guid: de050fdce06658544a65beb864c9ec97, type: 3}
       propertyPath: m_LocalScale.y
@@ -9096,6 +9213,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8660753847104088408, guid: de050fdce06658544a65beb864c9ec97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157385256827315853, guid: de050fdce06658544a65beb864c9ec97, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10339,9 +10460,10 @@ GameObject:
   m_Component:
   - component: {fileID: 803507445}
   - component: {fileID: 803507446}
+  - component: {fileID: 803507447}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10416,6 +10538,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &803507447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803507444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &807315200
 GameObject:
   m_ObjectHideFlags: 0
@@ -10625,9 +10761,10 @@ GameObject:
   - component: {fileID: 832665960}
   - component: {fileID: 832665959}
   - component: {fileID: 832665958}
+  - component: {fileID: 832665961}
   m_Layer: 0
   m_Name: Flotador 1_0 (2)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10740,6 +10877,20 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &832665961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832665956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &834578468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14005,6 +14156,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1037931980 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5675052449471624871, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+  m_PrefabInstance: {fileID: 546042966}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411142544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd062b0ab6455aa4fbe375d2efb8aba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1049351317
 GameObject:
   m_ObjectHideFlags: 0
@@ -14453,7 +14615,7 @@ GameObject:
   - component: {fileID: 1069105173}
   - component: {fileID: 1069105172}
   m_Layer: 3
-  m_Name: BARCO (4)
+  m_Name: LIMITE DEL NIVEL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14467,12 +14629,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069105170}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -41.74, y: 2.71, z: 0}
-  m_LocalScale: {x: 15.753611, y: 0.4754036, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -3.18, y: 1.19, z: -0}
+  m_LocalScale: {x: 14.478155, y: 0.57677114, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 316029267}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1069105172
 BoxCollider2D:
@@ -14590,7 +14752,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5660378, g: 0.173463, b: 0.018689938, a: 1}
   m_FlipX: 0
@@ -14971,9 +15133,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1151617124}
   - component: {fileID: 1151617125}
+  - component: {fileID: 1151617126}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15048,6 +15211,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1151617126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151617123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1161935764
 GameObject:
   m_ObjectHideFlags: 0
@@ -15157,7 +15334,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.07843137, g: 0.39512765, b: 1, a: 1}
+  m_Color: {r: 0.07843137, g: 0.39512765, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16043,9 +16220,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1238046129}
   - component: {fileID: 1238046130}
+  - component: {fileID: 1238046131}
   m_Layer: 0
   m_Name: Flotador 1_0 (5)
-  m_TagString: Untagged
+  m_TagString: plattemporal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16120,6 +16298,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1238046131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238046128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1242748192
 GameObject:
   m_ObjectHideFlags: 0
@@ -17235,7 +17427,7 @@ GameObject:
   - component: {fileID: 1314353756}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (8)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17750,7 +17942,7 @@ GameObject:
   - component: {fileID: 1344185901}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (11)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17893,7 +18085,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4833356415333083255, guid: f15a373fa5bef4e42ad29a9d9c28fc33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17954,7 +18146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liana: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1037931980}
   maxRotationDuration: 3
   forceImpulse: 4
 --- !u!114 &1352013570
@@ -19130,7 +19322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liana: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1037931980}
   maxRotationDuration: 3
   forceImpulse: 4
 --- !u!114 &1448544110
@@ -21646,7 +21838,7 @@ GameObject:
   - component: {fileID: 1692546843}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (9)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21789,7 +21981,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4833356415333083255, guid: f15a373fa5bef4e42ad29a9d9c28fc33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22265,7 +22457,7 @@ GameObject:
   - component: {fileID: 1754986322}
   m_Layer: 0
   m_Name: Gaviotas 1_0
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22469,7 +22661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liana: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1037931980}
   maxRotationDuration: 3
   forceImpulse: 4
 --- !u!114 &1769706370
@@ -22940,7 +23132,7 @@ GameObject:
   - component: {fileID: 1801290364}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (7)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23254,7 +23446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liana: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1037931980}
   maxRotationDuration: 3
   forceImpulse: 4
 --- !u!114 &1827050940
@@ -23892,7 +24084,7 @@ GameObject:
   - component: {fileID: 1919618700}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (12)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24239,7 +24431,7 @@ GameObject:
   - component: {fileID: 1936793272}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (1)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25979,7 +26171,7 @@ GameObject:
   - component: {fileID: 2076570672}
   m_Layer: 0
   m_Name: Gaviotas 1_0 (3)
-  m_TagString: Untagged
+  m_TagString: Matarjugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26523,6 +26715,7 @@ SceneRoots:
   - {fileID: 341807913}
   - {fileID: 1560822886}
   - {fileID: 1073776923}
+  - {fileID: 1069105171}
   - {fileID: 546042966}
   - {fileID: 316029267}
   - {fileID: 324138197}

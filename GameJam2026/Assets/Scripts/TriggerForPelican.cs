@@ -1,5 +1,6 @@
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerForPelican : MonoBehaviour
 {
@@ -34,10 +35,18 @@ public class TriggerForPelican : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Matarjugador")
+        if (collision.GetComponent<PelicanControl>()!=null)
         {
-            Debug.Log("aqui muere el jugador"); //falta el teletransporte del jugador al menu de muerte
+            Debug.Log("He colisionado con: " + collision.gameObject.name);
+            Movimiento player = collision.GetComponentInChildren<Movimiento>();
+            Debug.Log(player);
+            if (player != null)
+            {
+                PlayerSet(player);
+                this.enabled = false;
+            }
         }
+        
     }
 
     public void PlayerSet(Movimiento player)
@@ -53,6 +62,13 @@ public class TriggerForPelican : MonoBehaviour
         this.gameObject.SetActive(false);
     }
     // Update is called once per frame
+
+    
+        //Si llega al trigger final se desactivará el script del pelicano
+      
+
+        
+    
     void Update()
     {
 

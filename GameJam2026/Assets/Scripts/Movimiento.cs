@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -69,6 +68,22 @@ public class Movimiento : MonoBehaviour
         {
             //Se habilita el salto
             isJumping = true;
+
+            //Se guarda lo que ha colisionado con el raycast
+            RaycastHit2D p = Physics2D.Raycast(this.transform.position, Vector2.down, 0.6f, layerRay);
+            //Si la distancia entre el punto de impacto y el objeto
+            if (p.collider != null)
+            {
+                Debug.Log(p.distance);
+                if (p.distance <= 0.3f)
+                {
+                    rb.AddForceY(jumpForce, ForceMode2D.Force);
+                    Debug.Log(p.distance);
+                }
+                //La velocidad lineal del rigidbody se aplica para que se pueda mover en el salto
+                //rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+            }
             //jumpHolding = Time.time;
 
         }
@@ -76,7 +91,7 @@ public class Movimiento : MonoBehaviour
         {
             //Se deshabilita el salto y se hace que el rigidbody tenga una fuerza de 0
             isJumping = false;
-            rb.linearVelocity = Vector2.zero;
+            //rb.linearVelocity = Vector2.zero;
 
         }
     }
@@ -88,22 +103,30 @@ public class Movimiento : MonoBehaviour
         //Se comprueba si se puede mover 
         if (isMoving)
         {
-            Vector3 nuevaPos = transform.position + movement * speed * Time.deltaTime;
-            transform.position = nuevaPos;//Se mueve a una velocidad cada frame
+            //Vector3 nuevaPos = transform.position + movement * speed * Time.deltaTime;
+            //transform.position = nuevaPos;//Se mueve a una velocidad cada frame
+            rb.AddForceX(movement.x * speed * Time.deltaTime);
+
         }
         //Se comprueba si se puede saltar
         if (isJumping)
         {
-
-            //Se guarda lo que ha colisionado con el raycast
-            RaycastHit2D p = Physics2D.Raycast(this.transform.position, Vector2.down, 0.6f, layerRay);
-            //Si la distancia entre el punto de impacto y el objeto
-            if (p.collider != null && p.distance <= 0.2f)
-            {
-                //La velocidad lineal del rigidbody se aplica para que se pueda mover en el salto
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                Debug.Log(p.distance);
-            }
+           
+            ////Se guarda lo que ha colisionado con el raycast
+            //RaycastHit2D p = Physics2D.Raycast(this.transform.position, Vector2.down, 0.6f, layerRay);
+            ////Si la distancia entre el punto de impacto y el objeto
+            //if (p.collider != null )
+            //{
+            //    Debug.Log(p.distance);
+            //    if (p.distance <= 0.3f)
+            //    {
+            //        rb.AddForceY(jumpForce);
+            //        Debug.Log(p.distance);
+            //    }
+            //    //La velocidad lineal del rigidbody se aplica para que se pueda mover en el salto
+            //    //rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                
+            //}
         }
         //Sirve para que decrezca la salud durante el tiempo
         if (!lifeIsDecreasing)
@@ -116,10 +139,10 @@ public class Movimiento : MonoBehaviour
             health = maxHealth;
             healthbar.fillAmount = health / maxHealth;
         }
-        float velocidadX = Input.GetAxis("Horizontal")*Time.deltaTime*speed; //UNAI: Para detectar el movimiento horizontal y cambiar de animación 
-        animator.SetFloat("MOVERSE",velocidadX*speed);//
+        float velocidadX = Input.GetAxis("Horizontal") * Time.deltaTime * speed; //UNAI: Para detectar el movimiento horizontal y cambiar de animación 
+        animator.SetFloat("MOVERSE", velocidadX * speed);//
         Vector3 posicion = transform.position;//
-        transform.position = new Vector3 (velocidadX + posicion.x, posicion.y);
+        //transform.position = new Vector3(velocidadX + posicion.x, posicion.y);
 
     }
     //Permite recuperar la salud del jugador
@@ -144,11 +167,13 @@ public class Movimiento : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Comprueba si hay un componente de agua para realizar las funciones de agua
-        if (collision.TryGetComponent<Water>(out Water recover))
+        if  (collision.GetComponent<Water>() != null)
         {
             Debug.Log("Detecte agua");
             RecoverHealth();
-            recover.Deactivate();
+            collision.GetComponent<Water>().Deactivate();
+
+
         }
         //Comprueba si hay un componente de pelicano para realizar las funciones de pelicano
         else if (collision.TryGetComponent<TriggerForPelican>(out TriggerForPelican pelican))

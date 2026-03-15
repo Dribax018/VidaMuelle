@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu inicio.unity
     guid: 26161cb235756484394c9d83fdbe5aee
   - enabled: 1
-    path: Assets/Scenes/PROTOTIPO 0.1 1.unity
-    guid: f9a7d4eafceffee47bd1e4bdcfc4c0ff
+    path: Assets/Scenes/JUEGO FINAL SIN ARTE.unity
+    guid: ac03f05a6e5ac2b4cb8335cdc779c6fa
   - enabled: 1
     path: Assets/Scenes/Menu final.unity
     guid: a6dab78101a0b8e4e8ae6eab7ccb2ea0

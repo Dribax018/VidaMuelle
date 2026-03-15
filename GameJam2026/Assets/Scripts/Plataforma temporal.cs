@@ -1,6 +1,6 @@
 using UnityEngine;
-using Unity.Collections;
-using Unity.Collections;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Plataformatemporal : MonoBehaviour
 {

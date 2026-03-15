@@ -760,6 +760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67023784}
   - component: {fileID: 67023785}
+  - component: {fileID: 67023786}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
   m_TagString: plattemporal
@@ -837,6 +838,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &67023786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67023783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &73034137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,7 +3170,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1242748193}
-  - {fileID: 1069105171}
   - {fileID: 331271184}
   - {fileID: 2146502974}
   - {fileID: 25068554}
@@ -4687,6 +4701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408233414}
   - component: {fileID: 408233415}
+  - component: {fileID: 408233416}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
   m_TagString: plattemporal
@@ -4764,6 +4779,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &408233416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408233413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &411142544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1828010408260325612, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
@@ -6584,7 +6613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1828010408260325612, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2144433867698419806, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SortingOrder
@@ -6617,6 +6646,14 @@ PrefabInstance:
     - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_Offset.y
       value: -0.0018066391
+      objectReference: {fileID: 0}
+    - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3881913963365292712, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -6667,6 +6704,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1991174031231122854, guid: d8aa4dfccc03d734eb11cbc5ec6acff1, type: 3}
@@ -6685,6 +6730,10 @@ PrefabInstance:
     - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6197862332760462696, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -6897,6 +6946,7 @@ GameObject:
   - component: {fileID: 549731008}
   - component: {fileID: 549731010}
   - component: {fileID: 549731009}
+  - component: {fileID: 549731011}
   m_Layer: 0
   m_Name: "ANIMACI\xD3N FLOTADOR"
   m_TagString: plattemporal
@@ -6996,6 +7046,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &549731011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549731007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &568073158
 GameObject:
   m_ObjectHideFlags: 0
@@ -10252,6 +10316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 803507445}
   - component: {fileID: 803507446}
+  - component: {fileID: 803507447}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
   m_TagString: plattemporal
@@ -10329,6 +10394,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &803507447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803507444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &807315200
 GameObject:
   m_ObjectHideFlags: 0
@@ -10538,6 +10617,7 @@ GameObject:
   - component: {fileID: 832665960}
   - component: {fileID: 832665959}
   - component: {fileID: 832665958}
+  - component: {fileID: 832665961}
   m_Layer: 0
   m_Name: Flotador 1_0 (2)
   m_TagString: plattemporal
@@ -10653,6 +10733,20 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &832665961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832665956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &834578468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14279,7 +14373,7 @@ GameObject:
   - component: {fileID: 1069105173}
   - component: {fileID: 1069105172}
   m_Layer: 3
-  m_Name: BARCO (4)
+  m_Name: LIMITE DEL NIVEL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14293,12 +14387,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069105170}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -41.74, y: 2.71, z: 0}
-  m_LocalScale: {x: 15.753611, y: 0.4754036, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -3.18, y: 1.19, z: -0}
+  m_LocalScale: {x: 14.478155, y: 0.57677114, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 316029267}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1069105172
 BoxCollider2D:
@@ -14416,7 +14510,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5660378, g: 0.173463, b: 0.018689938, a: 1}
   m_FlipX: 0
@@ -14797,6 +14891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151617124}
   - component: {fileID: 1151617125}
+  - component: {fileID: 1151617126}
   m_Layer: 0
   m_Name: Flotador 1_0 (1)
   m_TagString: plattemporal
@@ -14874,6 +14969,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1151617126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151617123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c86efa958738f438f6f67d02788ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoespera: 1
+  velocidadrotacion: 50
 --- !u!1 &1161935764
 GameObject:
   m_ObjectHideFlags: 0
@@ -26349,6 +26458,7 @@ SceneRoots:
   - {fileID: 341807913}
   - {fileID: 1560822886}
   - {fileID: 1073776923}
+  - {fileID: 1069105171}
   - {fileID: 546042966}
   - {fileID: 316029267}
   - {fileID: 324138197}

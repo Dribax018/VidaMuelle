@@ -6221,6 +6221,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5675052449471624871, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1037931978}
+    - target: {fileID: 5675052449471624871, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
+      propertyPath: animation
+      value: 
+      objectReference: {fileID: 1037931978}
+    - target: {fileID: 5675052449471624871, guid: 77202161db793ad41a68e7383cb2545b, type: 3}
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 1594074850}

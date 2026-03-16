@@ -39,6 +39,7 @@ public class PelicanControl : MonoBehaviour
             //Se movera dependiendo del input dado
             nuevaPos += movement * speed * Time.deltaTime;
             nuevaPos += Vector3.right * speed * Time.deltaTime;
+
         }
         else
         {
@@ -50,15 +51,5 @@ public class PelicanControl : MonoBehaviour
 
         transform.position = nuevaPos;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //Si llega al trigger final se desactivará el script del pelicano
-        if(collision.TryGetComponent<TriggerForPelican>(out TriggerForPelican tP))
-        {
-            Movimiento player = this.GetComponentInChildren<Movimiento>();
-            Debug.Log(player);
-            tP.PlayerSet(player);
-            this.enabled = false;
-        }
-    }
+    
 }
